@@ -26,7 +26,7 @@ public class GuestbookDaoImple implements GuestbookDao {
 		try {
 			int insertedCount = sqlSession.insert("guestbook.insert", vo);
 			return insertedCount;
-//		} catch (PersistenceException e) {
+//1		} catch (PersistenceException e) {
 		} catch (Exception e) {
 			//	Dao의 Exception은 구체적인 사용자 정의 예외로 전환하여서 throw 한다.
 			throw new GuestbookDaoException("방명록 기록 중 예외 발생!", vo);

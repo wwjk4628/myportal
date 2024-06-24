@@ -5,7 +5,7 @@ import himedia.myportal.repositories.vo.GuestbookVo;
 public class GuestbookDaoException extends RuntimeException{
 	private GuestbookVo guestbookVo = null;
 	
-//	생성자
+//1	생성자
 	public GuestbookDaoException() {
 		
 	}

@@ -1,5 +1,5 @@
 package himedia.myportal.repositories.vo;
-
+//1
 import java.util.Date;
 
 public class UserVo {

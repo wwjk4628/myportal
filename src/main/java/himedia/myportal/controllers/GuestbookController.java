@@ -26,7 +26,7 @@ public class GuestbookController {
 		List<GuestbookVo> list = guestbookService.getMessageList();
 		model.addAttribute("list", list);
 		return "guestbook/list"; // View로 포워딩
-//		return list.toString();
+//1		return list.toString();
 	}
 
 	// /guestbook/write (POST) -> 방명록 기록

@@ -1,5 +1,5 @@
 package himedia.myportal.services;
-
+//1
 import himedia.myportal.repositories.vo.UserVo;
 
 public interface UserService {

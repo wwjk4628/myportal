@@ -4,7 +4,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-//	전역 예외 처리 컨트롤러
+//1	전역 예외 처리 컨트롤러
 @ControllerAdvice	//	@Component의 하위 어노테이션
 public class ApplicationExceptionHandler {
 	@ExceptionHandler(RuntimeException.class)

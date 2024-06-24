@@ -3,7 +3,7 @@ package himedia.myportal.repositories.vo;
 import java.util.Date;
 
 public class GuestbookVo {
-	// Fields
+	//1 Fields
 	private Long no;
 	private String name;
 	private String password;
