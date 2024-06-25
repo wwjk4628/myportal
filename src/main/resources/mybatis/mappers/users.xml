@@ -18,14 +18,14 @@
 	<select id="selectUserByEmail" parameterType="String"
 		resultType="UserVo">
 		SELECT no, name, email, gender FROM users
-		WHERE email =
-		#{value}
+		WHERE email = #{value}
 	</select>
 
 	<!-- 이메일과 비밀번호로 사용자 정보 SELECT : 로그인용 -->
 	<select id="selectUserByEmailAndPassword" parameterType="map"
 		resultType="UserVo">
-		SELECT no , name, email, gender, FROM users
-		WHERE email = #{value}
+		SELECT no, name, email, gender
+		FROM users
+		WHERE email = #{email} AND password = #{password}
 	</select>
 </mapper>

@@ -17,11 +17,12 @@
 
 		<div id="wrapper">
 			<div id="content">
+				<h1>방명록</h1>
 				<form action="<c:url value="/guestbook/write" />" method="POST">
 					<table border=1 width=500>
 						<tr>
 							<td>이름</td>
-							<td><input type="text" name="name" ></td>
+							<td><input type="text" name="name"></td>
 							<td>비밀번호</td>
 							<td><input type="password" name="password"></td>
 						</tr>
@@ -42,8 +43,8 @@
 							<td>${vo.name }</td>
 							<td>${vo.regDate }</td>
 							<td>
-								<!-- 수정 --> <a href="<c:url value="/guestbook/delete/${vo.no}" />">
-									삭제 </a>
+								<!-- 수정 --> <a
+								href="<c:url value="/guestbook/delete/${vo.no}" />"> 삭제 </a>
 							</td>
 						</tr>
 						<tr>
@@ -55,5 +56,5 @@
 		</div>
 		<%@ include file="/WEB-INF/views/includes/footer.jsp"%>
 	</div>
-</body>승균
+</body>
 </html>

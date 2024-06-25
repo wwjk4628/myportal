@@ -14,7 +14,7 @@ public class MainController {
 	@RequestMapping({"/", "/main"})
 	public String main() {
 		
-//1		return "/WEB-INF/views/home.jsp";
+//		return "/WEB-INF/views/home.jsp";
 		return "home";
 	}
 	

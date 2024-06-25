@@ -1,5 +1,34 @@
 package himedia.myportal.services;
-//123
-public class UserServiceImple {
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import himedia.myportal.repositories.dao.UserDao;
+import himedia.myportal.repositories.vo.UserVo;
+
+@Service("userService")
+public class UserServiceImple implements UserService{
+	@Autowired
+	private UserDao userDao;
+	
+	@Override
+	public boolean join(UserVo vo) {
+		int insertedCount = 0;
+		insertedCount = userDao.insert(vo);
+		return insertedCount == 1;
+	}
+
+	@Override
+	public UserVo getUser(String email) {
+		UserVo userVo = userDao.selectUser(email);
+		return userVo;
+	}
+
+	@Override
+	public UserVo getUser(String email, String password) {
+		UserVo userVo = userDao.selectUser(email, password);
+		return userVo;
+	}
+
+	
 }
